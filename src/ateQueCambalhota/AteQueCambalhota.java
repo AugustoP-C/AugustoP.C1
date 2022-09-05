@@ -1,8 +1,8 @@
-package ateQueNumero;
+package ateQueCambalhota;
 
 import java.util.Scanner;
 
-public class AteQueNumero {
+public class AteQueCambalhota {
     public static void main(String[] args) {
         Scanner v = new Scanner(System.in);
         System.out.println("Quantas cambalhotas você quer que eu de ?");
