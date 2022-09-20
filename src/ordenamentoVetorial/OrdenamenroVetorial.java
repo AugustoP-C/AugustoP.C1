@@ -18,10 +18,10 @@ public class OrdenamenroVetorial {
             sc.nextLine();
             vetor[c] = a;
         }
-        System.out.println("|----{}--Trocar[t]---Ordenar[o]-{}------|");
+        System.out.println("|----{}--Quer-trocar-algum-valor-{}-----|");
+        System.out.println("|----{}-----Sim-[s]--Não-[n]-----{}-----|");
         String x = sc.nextLine();
-        sc.nextLine();
-        if ("t".equals(x)) {
+        if ("s".equals(x)) {
             System.out.println("|--Qual-o-lugar-que-você-quer-trocar-?--|");
             int t = sc.nextInt();
             int T = t - 1;
@@ -29,9 +29,8 @@ public class OrdenamenroVetorial {
             float t2 = sc.nextFloat();
             vetor[T] = t2;
         }
-        if ("o".equals(x)) {
-            Arrays.sort(vetor);
-        }
+        System.out.println("|--{}-----Seu-vetor-ficou-asim------{}--|");
+        Arrays.sort(vetor);
         for (float d: vetor) {
             System.out.printf("%.0f \n" ,d);
         }
