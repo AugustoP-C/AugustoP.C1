@@ -16,7 +16,8 @@ public class Project01 {
         String[] nomes = nome.split(" ");
         nomes[1].length();
         if (nomes[0].length() != 2 && !nomes[0].equals("sá")) {
-
+            nomes[0].toUpperCase();
+            System.out.println(nomes[0].toUpperCase());
         }
     }
 }
