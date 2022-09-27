@@ -7,17 +7,25 @@ import java.util.Scanner;
 public class Project01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("|---------AVISO----------|");
-        System.out.println("|--Escreva-em-minusculo--|");
-        System.out.println("|-----Sem-abreviasões----|");
-        System.out.println("|---------AVISO----------|");
         System.out.println("|-----Qual-seu-nome-?----|");
         String nome = sc.nextLine();
+        String nomeCapitalizado = capitaliza(nome);
+        System.out.println(nomeCapitalizado);
+    }
+
+    private static String capitaliza(String nome) {
         String[] nomes = nome.split(" ");
-        nomes[1].length();
-        if (nomes[0].length() != 2 && !nomes[0].equals("sá")) {
-            nomes[0].toUpperCase();
-            System.out.println(nomes[0].toUpperCase());
+        int n = nomes.length;
+        String nomeret = "";
+        for (int c = 0; c < n; c++) {
+            if (nomes[c].length() !=) {
+                nomeret += " " + nomes[c].toLowerCase();
+            }
+            else {
+                nomeret += " " + String.valueOf(nomes[c].charAt(0)).toUpperCase() + nomes[c].substring(1).toLowerCase();
+            }
         }
+
+        return nomeret.trim();
     }
 }
