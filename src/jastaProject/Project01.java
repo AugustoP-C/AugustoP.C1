@@ -1,5 +1,6 @@
 package jastaProject;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import java.util.Scanner;
@@ -14,18 +15,19 @@ public class Project01 {
     }
 
     private static String capitaliza(String nome) {
+        nome = nome.toLowerCase();
+        String[] conectivos = {"de","da","do","dos","das","e","di","des"};
+        int n2 = conectivos.length;
         String[] nomes = nome.split(" ");
         int n = nomes.length;
         String nomeret = "";
         for (int c = 0; c < n; c++) {
-            if (nomes[c].length() !=) {
-                nomeret += " " + nomes[c].toLowerCase();
-            }
-            else {
-                nomeret += " " + String.valueOf(nomes[c].charAt(0)).toUpperCase() + nomes[c].substring(1).toLowerCase();
-            }
+                if (Arrays.asList(conectivos).contains(nomes[c])) {
+                    nomeret += " " + nomes[c].toLowerCase();
+                } else {
+                    nomeret += " " + String.valueOf(nomes[c].charAt(0)).toUpperCase() + nomes[c].substring(1).toLowerCase();
+                }
         }
-
-        return nomeret.trim();
+        return nomeret;
     }
 }
