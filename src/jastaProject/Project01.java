@@ -25,6 +25,7 @@ public class Project01 {
                 } else {
                     nomeret += " " + String.valueOf(nomes[c].charAt(0)).toUpperCase() + nomes[c].substring(1).toLowerCase();
                 }
+
         }
         return nomeret;
     }
