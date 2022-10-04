@@ -1,13 +1,13 @@
-package canetasDiverssas;
+package desafios;
 
-import java.util.Scanner;
+import desafios.Caneta;
 
 public class CriadorDeCanetas {
     public static void main(String[] args) {
-        Caneta c1 = new Caneta();
-        Caneta c2 = new Caneta();
-        Caneta c3 = new Caneta();
-        Caneta c4 = new Caneta();
+        desafios.Caneta c1 = new desafios.Caneta();
+        desafios.Caneta c2 = new desafios.Caneta();
+        desafios.Caneta c3 = new desafios.Caneta();
+        desafios.Caneta c4 = new Caneta();
 
         c1.cor = "Azul";
         c1.ponta = 0.5f;
