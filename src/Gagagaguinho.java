@@ -18,10 +18,7 @@ public class Gagagaguinho {
         int n2 = nomes.length;
         String nomeret = "";
         for (int c = 0; c < n; c++){
-
                 nomeret += " " + nomes[c] + " " + nomes[c] + " " + nomes[c] + " " + nomes[c];
-
-
         }
         return nomeret;
     }
