@@ -9,10 +9,12 @@ public class Banco {
         c1.maisSaldo();
         c1.setTipo("Poupanssa");
         c1.setNumConta(377);
+        c1.status();
 
         c2.setDono("claudete");
         c2.maisSaldo();
         c2.setTipo("Corrente");
         c2.setNumConta(139);
+        c2.status();
     }
 }
