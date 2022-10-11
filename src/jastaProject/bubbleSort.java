@@ -7,5 +7,9 @@ public class bubbleSort {
         Scanner sc = new Scanner(System.in);
         System.out.println("Quanto numero vc quer digitar?");
         int nc = sc.nextInt();
+            for (int c1 = 0; c1 < nc; c1++) {
+                System.out.printf("digite o %d° numero \n", c1 + 1);
+
+            }
     }
 }
