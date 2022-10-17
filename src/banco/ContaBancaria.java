@@ -1,4 +1,4 @@
-package desafios;
+package banco;
 
 public class ContaBancaria {
     // atribuidores
