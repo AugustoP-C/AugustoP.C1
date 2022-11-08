@@ -15,7 +15,7 @@ public class Funcao2Gral {
         double x2 = sigma.x2(a, b, c);
         return new double[]{x2, x1};
     }
-    public void EstudoSinais(float a,  float b, float c) {
+    public void Indicasoes(float a,  float b, float c) {
         Equacao2Gral sigma = new Equacao2Gral();
         double Del = sigma.Delta(a, b, c);
         if (a < 0) {
